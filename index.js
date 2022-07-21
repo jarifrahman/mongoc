@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const util= require('util');
+const encoder = new util.TextEncoder('utf-8');
 const { MongoClient } = require("mongodb");
 app.use(express.urlencoded({ extended: true }));
 
